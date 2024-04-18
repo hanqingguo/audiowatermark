@@ -8,7 +8,6 @@ from torch.utils.data import Dataset, DataLoader
 from torch import nn
 import matplotlib.pyplot as plt
 import librosa
-from utils import *
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 benign_model = resnet18(classes=10).to(device)
